@@ -5,27 +5,41 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+header,
+main,
+#contact,
+footer {
+    background-color: #fdfdfd;
+}
+
+
+h1,
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
 }
 
 /* header */
 
 header {
     width: 100%;
-    height: 10vh;
+    height: auto;
     display: flex;
     text-transform: uppercase;
-    background-color: white;
 }
 
 .logo,
 nav {
-    position: absolute;
-    line-height: 10vh;
+    line-height: 8vh;
 }
 
 .logo {
-    left: 20px;
+    margin-left: 2vw;
     font-size: xx-large;
 }
 
@@ -35,13 +49,10 @@ nav {
     color: #395664;
 }
 
-nav {
-    right: 20px;
-}
-
 nav ul {
     display: flex;
     list-style: none;
+    text-align: right;
 }
 
 nav ul li a {
@@ -57,12 +68,11 @@ nav ul li a:hover {
 }
 
 
-
 /*banner*/
 .banner {
     position: relative;
     width: 100%;
-    height: 100vh;
+    min-height: 60vh;
     background-image: url(images/banner-bg.jpg);
     background-size: cover;
     background-position: center;
@@ -75,7 +85,7 @@ nav ul li a:hover {
     position: absolute;
     top: 30%;
     right: 20%;
-    font-size: 40px;
+    font-size: 60px;
     animation: h1Animation 2s ease;
 }
 
@@ -83,7 +93,7 @@ nav ul li a:hover {
     position: absolute;
     top: 40%;
     right: 20%;
-    font-size: 30px;
+    font-size: 40px;
     animation: h2Animation 2s 1s ease both;
 }
 
@@ -136,13 +146,17 @@ main #about-us {
     text-align: justify;
 }
 
-main #about-us .photo img {
-    width: 25vw;
-    margin-top: 5vh;
+main div .photo {
+    width: 30vw;
+    background-image: url(images/12-chair-png-image.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
 }
 
-main #about-us .wrapper p {
-    width: 50vw;
+main #about-us .wrapper {
+    width: 70vw;
     margin-left: 5vw;
 }
 
@@ -178,7 +192,6 @@ main #about-us .wrapper p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     margin-top: 35px;
-
 }
 
 #why-us .wrapper p~p {
@@ -208,22 +221,24 @@ main #about-us .wrapper p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-.fotos img {
-    width: 25vw;
-    padding: 0px;
-    max-width: 100%;
-    max-height: 100%;
-    display: block;
-    filter: grayscale(50%);
-    transition: 1s linear;
+    width: 100%;
 }
 
 .fotos div {
     height: auto;
     padding: 0px;
     overflow: hidden;
+    width: 33%;
+}
+
+.fotos img {
+    width: 100%;
+    padding: 0px;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    filter: grayscale(50%);
+    transition: 1s linear;
 }
 
 .fotos img:hover {
@@ -239,7 +254,6 @@ main #about-us .wrapper p {
 #contact {
     display: flex;
     padding: 40px;
-    background-color: #ffffff;
     background-image: url(images/old-gray-cement-wall-background_34552-324.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -254,16 +268,13 @@ main #about-us .wrapper p {
 /*Adres*/
 address {
     width: 50%;
-    position: relative;
+    padding-top: 8%;
+    padding-left: 18%;
 }
 
 .contact-wrapper {
     text-align: left;
     font-style: normal;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .contact-wrapper h2 {
@@ -323,6 +334,226 @@ form * {
 /*footer*/
 footer {
     text-align: center;
-    padding: 10px;
+    font-size: 10px;
+    padding: 3vh;
     width: 100%;
+}
+
+
+
+
+/* -----------MEDIA-PORTRAIT---------- */
+
+@media (max-width: 1440px) {
+    .banner {
+        height: 100vh;
+    }
+}
+
+@media (max-width: 1280px) {
+    .banner h1 {
+        font-size: 40px;
+    }
+
+    .banner h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 920px) {
+    #price .wrapper~.wrapper {
+        margin-left: 5vw;
+    }
+}
+
+@media (max-width: 610px) {
+    header {
+        height: 14vh;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    nav {
+        line-height: 5vh;
+        padding-top: 2vh;
+    }
+
+
+    /* Banner */
+    .banner {
+        height: 40vh;
+    }
+
+    .banner h1 {
+        top: 30%;
+        right: 10%;
+        font-size: 30px;
+        animation: none;
+    }
+
+    .banner h2 {
+        top: 50%;
+        right: 10%;
+        font-size: 25px;
+        animation: none;
+    }
+
+    /* O nas */
+
+    main #about-us {
+        flex-direction: column;
+    }
+
+    main div .photo {
+        width: 100%;
+        height: 40vh;
+        justify-content: center;
+    }
+
+    main #about-us .wrapper {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+
+    /*Dlaczego my*/
+
+    #why-us .wrapper {
+        flex-direction: column;
+    }
+
+    #why-us .wrapper i {
+        width: 80vw;
+        background-color: transparent;
+        border-right: none;
+        border-bottom: 3px dotted black;
+    }
+
+    #why-us .wrapper i:last-child {
+        border-bottom: none;
+    }
+
+
+    /* Wycena */
+
+    #price {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #price .wrapper {
+        width: 80vw;
+    }
+
+    #price .wrapper~.wrapper {
+        width: 80vw;
+        margin-top: 5vh;
+        margin-left: 0;
+    }
+
+
+    /* Galeria */
+    .fotos img {
+        width: 80vw;
+    }
+
+    .fotos div {
+        width: 50%;
+    }
+
+    #gallery h2 {
+        margin-bottom: 5vh;
+    }
+
+
+    /*Kontakt*/
+
+    #contact {
+        flex-direction: column;
+    }
+
+    .contact-wrapper {
+        text-align: center;
+    }
+
+    address {
+        padding-top: 0;
+        padding-left: 0;
+        padding-bottom: 4vh;
+        width: 100%;
+    }
+
+    form {
+        width: 100%;
+    }
+}
+
+
+
+@media (max-width: 430px) {
+    nav {
+        font-size: 14px;
+    }
+
+    .logo {
+        padding: 5px;
+    }
+
+    .banner h1 {
+        font-size: 25px;
+    }
+
+    .banner h2 {
+        font-size: 20px;
+    }
+
+    .fotos div {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 360px) {
+    .banner {
+        height: 30vh;
+    }
+
+    #about-us {
+        padding: 5vh 5vw;
+    }
+
+    header {
+        height: 20vh;
+    }
+
+    .banner h1,
+    .banner h2 {
+        text-align: right;
+    }
+
+}
+
+
+
+/* -----------MEDIA-LANDSCAPE---------- */
+@media (max-width: 610px) and (orientation: landscape) {
+    .banner {
+        height: 80vh;
+    }
+}
+
+@media (max-width: 430px) and (orientation: landscape) {
+    .banner {
+        height: 60vh;
+    }
+}
+
+@media (max-width: 360px) and (orientation: landscape) {
+    .banner {
+        height: 80vh;
+    }
 }
