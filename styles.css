@@ -22,6 +22,7 @@ h1,
 h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
+    color: #395664;
 }
 
 /* header */
@@ -31,6 +32,7 @@ header {
     height: auto;
     display: flex;
     text-transform: uppercase;
+    background-color: #395664;
 }
 
 .logo,
@@ -46,7 +48,7 @@ nav {
 .logo a {
     text-decoration: none;
     padding: 10px;
-    color: #395664;
+    color: white;
 }
 
 nav ul {
@@ -59,7 +61,7 @@ nav ul li a {
     text-decoration: none;
     margin-left: 10px;
     padding: 10px;
-    color: black;
+    color: white;
     text-align: center;
 }
 
@@ -73,12 +75,13 @@ nav ul li a:hover {
     position: relative;
     width: 100%;
     min-height: 60vh;
-    background-image: url(images/banner-bg.jpg);
+    height: 60vh;
+    background-image: url(images/interior-has-armchair-empty-white-wall-background-3d-rendering.jpg);
     background-size: cover;
     background-position: center;
     overflow: hidden;
-    text-shadow: 0 0 4px black;
-    color: rgba(255, 255, 255, 0.877);
+    /* text-shadow: 0 0 4px rgb(167, 166, 166); */
+    color: #395664;
 }
 
 .banner h1 {
@@ -148,7 +151,7 @@ main #about-us {
 
 main div .photo {
     width: 30vw;
-    background-image: url(images/12-chair-png-image.png);
+    background-image: url(images/60378-turquoise-color-paint-stroke-brush-teal.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -164,10 +167,16 @@ main #about-us .wrapper {
 /*Dlaczego my*/
 
 #why-us {
-    background-image: url(images/old-gray-cement-wall-background_34552-324.jpg);
+    /* background-image: url(images/old-gray-cement-wall-background_34552-324.jpg); */
+    background-color: #e3e3e3;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+#why-us h2 {
+    color: black;
+}
+
 
 #why-us .wrapper {
     display: flex;
@@ -203,7 +212,7 @@ main #about-us .wrapper {
 
 #price {
     display: flex;
-    background-image: linear-gradient(rgb(255, 255, 255) 300px, rgb(198, 201, 201) 600px);
+    /* background-image: linear-gradient(rgb(255, 255, 255) 300px, rgb(198, 201, 201) 600px); */
 }
 
 #price .wrapper {
@@ -216,6 +225,10 @@ main #about-us .wrapper {
 
 
 /* Galeria */
+
+#gallery {
+    background-color: #e3e3e3;
+}
 
 .fotos {
     display: flex;
@@ -254,7 +267,8 @@ main #about-us .wrapper {
 #contact {
     display: flex;
     padding: 40px;
-    background-image: url(images/old-gray-cement-wall-background_34552-324.jpg);
+    /* background-image: url(images/old-gray-cement-wall-background_34552-324.jpg); */
+    /* background-color: #395664; */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -285,6 +299,7 @@ address {
     font-size: 30px;
     padding-top: 30px;
     padding-right: 10px;
+    color: #395664;
 }
 
 .contact-wrapper a i:hover {
@@ -337,6 +352,7 @@ footer {
     font-size: 10px;
     padding: 3vh;
     width: 100%;
+    background-color: #395664;
 }
 
 
