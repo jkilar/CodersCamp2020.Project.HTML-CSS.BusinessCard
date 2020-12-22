@@ -26,7 +26,6 @@ h2 {
 }
 
 /* header */
-
 header {
     width: 100%;
     height: auto;
@@ -83,7 +82,6 @@ nav ul li a:hover {
     background-size: cover;
     background-position: center;
     overflow: hidden;
-    /* text-shadow: 0 0 4px rgb(167, 166, 166); */
     color: #395664;
 }
 
@@ -146,7 +144,6 @@ main div h2 {
 
 
 /* O nas */
-
 main #about-us {
     display: flex;
     text-align: justify;
@@ -158,7 +155,6 @@ main div .photo {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-
 }
 
 main #about-us .wrapper {
@@ -168,9 +164,7 @@ main #about-us .wrapper {
 
 
 /*Dlaczego my*/
-
 #why-us {
-    /* background-image: url(images/old-gray-cement-wall-background_34552-324.jpg); */
     background-color: #e3e3e3;
     background-repeat: no-repeat;
     background-size: cover;
@@ -212,10 +206,8 @@ main #about-us .wrapper {
 }
 
 /* Wycena */
-
 #price {
     display: flex;
-    /* background-image: linear-gradient(rgb(255, 255, 255) 300px, rgb(198, 201, 201) 600px); */
 }
 
 #price .wrapper {
@@ -228,7 +220,6 @@ main #about-us .wrapper {
 
 
 /* Galeria */
-
 #gallery {
     background-color: #e3e3e3;
 }
@@ -264,19 +255,14 @@ main #about-us .wrapper {
 }
 
 
-
 /*Kontakt*/
-
 #contact {
     display: flex;
     padding: 40px;
-    /* background-image: url(images/old-gray-cement-wall-background_34552-324.jpg); */
-    /* background-color: #395664; */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-
 
 #contact address a {
     color: black;
@@ -361,9 +347,7 @@ footer {
 
 
 
-
 /* -----------MEDIA-PORTRAIT---------- */
-
 @media (max-width: 1440px) {
     .banner {
         height: 100vh;
@@ -422,7 +406,6 @@ footer {
     }
 
     /* O nas */
-
     main #about-us {
         flex-direction: column;
     }
@@ -439,9 +422,7 @@ footer {
     }
 
 
-
     /*Dlaczego my*/
-
     #why-us .wrapper {
         flex-direction: column;
     }
@@ -459,7 +440,6 @@ footer {
 
 
     /* Wycena */
-
     #price {
         display: flex;
         flex-direction: column;
@@ -491,7 +471,6 @@ footer {
 
 
     /*Kontakt*/
-
     #contact {
         flex-direction: column;
     }
@@ -560,7 +539,6 @@ footer {
     }
 
 }
-
 
 
 /* -----------MEDIA-LANDSCAPE---------- */

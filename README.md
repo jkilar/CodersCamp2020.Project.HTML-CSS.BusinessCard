@@ -1,4 +1,4 @@
-# The first project within CodersCamp - Web Programming Course (coderscamp.edu.pl). 
+# The first project within CodersCamp - Web Programming Course (coderscamp.edu.pl)
 
 ## Furniture Restoration - HTML CSS Website
 
